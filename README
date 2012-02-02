@@ -4,7 +4,7 @@ The actual excersice:
 Use dependency injection (with or without a DI framework) in the language of your choice to build an application that determines whether an input string is a palindrome. In order to motivate the use of DI your application must be separated into (at least) the following parts:
 
 palindrome service  - determines whether the string is a palindrome
-persistence service - used to lookup a string to see if itÎéÎ÷s a known palindrome (fake this - no need for access to a real persistent store)
+persistence service - used to lookup a string to see if it's a known palindrome (fake this - no need for access to a real persistent store)
 presentation controller
 view
 Aim for conciseness but not obscurity - we want to focus on the use of DI and so we want to minimize the amount of non-DI code, but on the other hand we still need something that is readable.
