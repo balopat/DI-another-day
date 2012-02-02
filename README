@@ -1,0 +1,34 @@
+The actual excersice: 
+
+
+Use dependency injection (with or without a DI framework) in the language of your choice to build an application that determines whether an input string is a palindrome. In order to motivate the use of DI your application must be separated into (at least) the following parts:
+
+palindrome service  - determines whether the string is a palindrome
+persistence service - used to lookup a string to see if itÎéÎ÷s a known palindrome (fake this - no need for access to a real persistent store)
+presentation controller
+view
+Aim for conciseness but not obscurity - we want to focus on the use of DI and so we want to minimize the amount of non-DI code, but on the other hand we still need something that is readable.
+
+Please email Dave & Ged your solutions by 3rd February.
+
+Some description:
+
+Since the Spring framework first challenged EJB2 with a simpler way of producing java web applications, dependency injection (DI) (sometimes [incorrectly?] referred to as Inversion of Control) has become a mainstream technology in the Java world. However, when talking about other languages there seems to be far less talk about dependency injection. Is this because other languages have features that java lacks, because of the types of application that Java is typically employed to develop or some other difference in the java ecosystem? 
+
+Is dependency injection good or bad? Is is accurate to say that dependency injection is less prevalent in other languages? Is it that the frameworks themselves are somehow bad for us rather than the technique itself? Nay Pryce has this to say:
+
+
+ÎéÎíWe don't use a DI framework. Personally, I find them more of a hindrance than a help in most situations because they don't distinguish between "internals" & "peers" (p 50) and so often guide design to a violation of the "composite simpler than the sum of its parts" principle (p 53). I find that I need to clearly understand, and therefore express in code, the dependencies between the objects in the system. Hiding that information away in auto-wiring frameworks or obfuscating it in XML files that, furthermore, cannot be easily refactored just gets in my way when I later need to understand the code and modify it.ÎéÎí
+
+In this code share weÎéÎ÷ll examine examples of using dependency injection in different languages, different frameworks and without frameworks and discuss whether DI is harmful.
+
+Are all frameworks created equal? What makes a good or bad DI framework?
+
+Here are some DI frameworks for your consideration - feel free to use the comments to link to others
+
+Spring (Java) http://www.springsource.org/
+Guice (Java) http://code.google.com/p/google-guice/
+Seam (Java) http://seamframework.org/
+Boing (clojure) https://github.com/lprefontaine/Boing
+Pico (Java) http://picocontainer.org/
+Parsley (Actionscript) http://www.spicefactory.org/parsley/
